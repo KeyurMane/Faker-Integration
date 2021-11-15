@@ -1,0 +1,23 @@
+Employee Data:
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Fname</th>
+        <th>Lname</th>
+        <th>DOB</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Contact</th>
+    </tr>
+{% for emp in obj %}
+<tr>
+    <td>{{emp.eid}}</td>
+    <td>{{emp.efnm}}</td>
+    <td>{{emp.elnm}}</td>
+    <td>{{emp.edob}}</td>
+    <td>{{emp.email}}</td>
+    <td>{{emp.eaddr}}</td>
+    <td>{{emp.epn}}</td>
+</tr>
+{% endfor %}
+</table>
